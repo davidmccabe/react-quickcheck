@@ -1,0 +1,37 @@
+{
+  "name": "react-quickcheck",
+  "version": "0.0.1",
+  "description": "Property-based testing for React components",
+  "author": "David McCabe <davemccabe@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidmccabe/react-quickcheck"
+  },
+  "bugs": {
+    "url": "https://github.com/davidmccabe/react-quickcheck/issues"
+  },
+  "keywords": [
+    "react",
+    "test",
+    "testing",
+    "unit",
+    "quickcheck"
+  ],
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "jest-cli": "^0.2.0",
+    "jsverify": "^0.4.6",
+    "react": "^0.12.1",
+    "react-tools": "^0.12.1"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ]
+  },
+  "scripts": {
+    "test": "node node_modules/.bin/jest"
+  }
+}
